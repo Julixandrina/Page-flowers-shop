@@ -1,0 +1,168 @@
+body {
+    background-color: #375A3B;
+    padding: 100px 60px 70px 60px;
+    display: flex;
+    flex-grow: 1;
+    height: 100vh;
+    box-sizing: border-box;
+    /*min-width: 600px;*/
+}
+.page {
+    background: #FFFFFF;
+    border-radius: 25px;
+    width: 100%;
+    padding: 0 75px;
+    display: flex;
+    flex-direction: column;
+
+    min-height: 600px;
+}
+header {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    letter-spacing: 0.16em;
+    color: #36623B;
+    text-decoration: none;
+}
+.logo a img {
+    position: relative;
+    bottom: -10px;
+}
+.menu {
+    display: flex;
+}
+.menu a {
+    margin-left: 15px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #36623B;
+    box-sizing: border-box;
+    line-height: 36px;
+}
+.menu a:hover {
+    border-bottom: 1px solid;
+
+}
+.content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/roses.jpg");
+    background-repeat: no-repeat;
+    background-position: right -15px;
+    background-size: auto 700px;
+    position: relative;
+}
+.blok {
+    margin-left: 10%;
+}
+.blok h1 {
+    font-family: Cinzel;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 48px;
+    color: #7DB082;
+    background-color: white;
+}
+.blok p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    color: #2D432F;
+    max-width: 290px;
+    margin-top: 25px;
+    background-color: white;
+}
+.blok a.button {
+    background: #FFFFFF;
+    border: 2px solid #375A3B;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 18px;
+    color: #36623B;
+    padding: 10px 60px;
+    text-decoration: none;
+    margin-top: 35px;
+    display: inline-block;
+    transition: all 0.35s;
+
+}
+.blok a.button:hover {
+    background-color: #375A3B;
+    color: white;
+    transition: all 0.35s;
+}
+.social {
+    position: absolute;
+    bottom: 30px;
+    left: -48px;
+}
+
+.social a {
+    display: block;
+    background: #C8D7C9;
+    border-radius: 17px;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    padding-top: 8px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+@media (max-width: 900px) {
+    .content {
+        background-position: center -15px;
+        background-size: cover;
+
+    }
+}
+@media (max-width: 750px) {
+    .menu {
+        flex-direction: column;
+        justify-items: flex-end;
+    }
+
+}
+@media (max-width: 450px) {
+    body {
+        padding: 30px 15px;
+    }
+    .page {
+        padding: 0px 20px;
+        margin-bottom: 15px;
+    }
+    .social {
+        left: -5px;
+    }
+    .blok h1, .blok p {
+        background-color: transparent;
+    }
+    .blok h1 {
+        font-size: 25px;
+    }
+    .blok {
+        margin-left: unset;
+        background-color: rgba(255, 255, 255, .85);
+        padding: 15px;
+    }
+}
