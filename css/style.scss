@@ -127,8 +127,12 @@ body {
       display: inline-block;
       transition: all 300ms;
 
-      &:hover:active:focus {
+      &:hover, &:active, &:focus {
         background-color: #375A3B;
+        color: white;
+      }
+      &:active, &:focus {
+        background-color: #3b8642;
         color: white;
       }
     }
