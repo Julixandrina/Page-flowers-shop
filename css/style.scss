@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   padding: 60px;
   justify-content: center;
+  height: 100vh;
 
   .page {
     background: #FFFFFF;
@@ -13,7 +14,6 @@ body {
     padding: 0 75px;
     display: flex;
     flex-direction: column;
-    min-height: 800px;
 
     header {
       padding: 40px 0;
